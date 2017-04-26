@@ -1,0 +1,27 @@
+{
+  "name": "react-start",
+  "version": "1.0.0",
+  "description": "Building an application using react and webpack",
+  "scripts": {
+    "start": "webpack-dev-server --content-base "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubisaini/react-start.git"
+  },
+  "keywords": [
+    "react-start"
+  ],
+  "author": "Rubi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubisaini/react-start/issues"
+  },
+  "homepage": "https://github.com/rubisaini/react-start#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
