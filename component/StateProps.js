@@ -23,6 +23,7 @@ class StateProps extends React.Component {
     render() {
         return (
             <div>
+                <h1>{this.props.appInfo}</h1>
                 <div className="header">
                     {this.state.data.map((section, index) => <div key={index}
                                                                   onClick={() => this.showDescription(section)}>{section.title}</div>)}
@@ -31,6 +32,10 @@ class StateProps extends React.Component {
             </div>)
     }
 }
+
+StateProps.defaultProps = {
+    appInfo: "Use state and props",
+};
 
 class DetailSection extends React.Component {
     render() {
