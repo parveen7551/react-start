@@ -1,10 +1,15 @@
 /**
  * Created by intelligrape on 25/4/17.
  */
+
+const webpack = require('webpack');
+const path = require('path');
 const config = {
     entry: './src/main.js',
     output: {
-        filename: './src/index.js',
+        path: path.resolve(__dirname, './dist'),
+        filename: 'index.js',
+        publicPath: '/'
     },
     devServer: {
         port: 3004,
@@ -23,7 +28,10 @@ const config = {
                 loader: 'style-loader!css-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 };
 
 module.exports = config;
