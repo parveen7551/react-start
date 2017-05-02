@@ -2,9 +2,9 @@
  * Created by intelligrape on 25/4/17.
  */
 const config = {
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
-        filename: './index.js'
+        filename: './src/index.js',
     },
     devServer: {
         port: 3004,

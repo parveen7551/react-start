@@ -2,7 +2,7 @@
  * Created by intelligrape on 26/4/17.
  */
 import React from 'react';
-require("../assets/style.css")
+require("../../assets/style.css")
 
 class StateProps extends React.Component {
     constructor() {
