@@ -2,6 +2,7 @@
  * Created by intelligrape on 26/4/17.
  */
 import React from 'react';
+import Area from './Area';
 
 class MultiComp extends React.Component {
 
@@ -43,18 +44,14 @@ class Container extends React.Component {
         return(
             <div style={bodyStyle}>
              <ul>
-                 <li>
-                     Mongo
-                 </li>
-                 <li>
-                    Express
-                 </li>
-                 <li>
-                     AngularJS
-                 </li>
-                 <li>
-                     NodeJs
-                 </li>
+                 <Area area="Mongo">
+                 </Area>
+                 <Area area="Express">
+                 </Area>
+                 <Area area="AngularJS">
+                 </Area>
+                 <Area area="NodeJs">
+                 </Area>
              </ul>
             </div>
         )
