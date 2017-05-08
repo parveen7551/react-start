@@ -29,6 +29,7 @@ class Button extends React.Component {
     }
 
     componentDidUpdate() {
+        console.log('child---componentdidupdate');
 
     }
 

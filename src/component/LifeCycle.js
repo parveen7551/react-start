@@ -30,6 +30,7 @@ class LifeCycle extends React.Component {
     }
 
     componentDidUpdate() {
+        console.log('Parent---componentdidupdate');
 
     }
     i =0;
